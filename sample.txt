@@ -1,15 +1,8 @@
+
+
+
 {
-  "message_id": "a1b2c3d4-5678-90ef-ghij-klmnopqrstuv",
-  "from": "winner-alert@mega-lottery-international.xyz",
-  "to": ["victim@example.com"],
-  "cc": [],
-  "bcc": [],
-  "subject": "🎉 CONGRATULATIONS! You've WON $5,000,000 USD - CLAIM NOW!",
-  "body": "Dear Lucky Winner,\n\nCONGRATULATIONS!!! You have been selected as the GRAND PRIZE WINNER of our International Mega Lottery Draw!\n\nYour winning amount: $5,000,000.00 USD\nReference Number: MLB/2024/UK/7891\nBatch Number: 2024/02/ZY369\n\nTo CLAIM your prize, you must ACT NOW! This offer expires in 48 HOURS.\n\nClick here immediately: http://claim-prize-now.xyz/verify?ref=MLB2024UK7891\n\nProvide the following:\n- Full Name\n- Address\n- Phone Number\n- Bank Account Details\n- Copy of ID/Passport\n\nRemember: Keep this CONFIDENTIAL! Do not share with anyone.\n\nFor immediate assistance, contact our Claims Department:\nEmail: urgent@prize-claims.top\nPhone: +44-20-FAKE-NUM\n\nYours faithfully,\nDr. Richard Henderson\nClaims Processing Manager\nInternational Lottery Commission",
-  "date": "2024-12-19T10:30:00Z",
-  "headers": {
-    "Return-Path": "bounce@mega-lottery-international.xyz",
-    "Reply-To": "urgent@prize-claims.top",
-    "X-Mailer": "BulkMailer Pro 3.5"
-  }
+  "from": "security@bank-verify.ru",
+  "subject": "⚠️ Account Suspended - Verify Now",
+  "body": "Your account has been suspended. Click here to verify: http://192.168.1.1/bank"
 }

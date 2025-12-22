@@ -412,4 +412,15 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### API Documentation
+![API Docs](screenshots/api-docs.png)
+![Home UI](screenshots/home.png)
+
+---
+
 **Built for protecting email platforms at scale with zero-tolerance for false positives.** 🛡️
