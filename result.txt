@@ -1,0 +1,133 @@
+{
+  "from": "colleague@company.com",
+  "subject": "Q4 Report Review",
+  "body": "Hi team, please review the attached Q4 financial report before tomorrow's meeting. Let me know if you have questions."
+}
+
+{   "message_id": "string",   "from_email": "colleague@company.com",   "to": [     "string"   ],   "subject": "Q4 Report Review",   "predicted": {     "ham_score": 0.7446415424346924,     "spam_score": 0.03982165455818176,     "phishing_score": 0.21553683280944824,     "predicted_label": "ham",     "model_used": "xgboost_v3_enhanced",     "model_confidence": 0.7446415424346924   },   "risk_analysis": {     "risk_score": 0,     "severity": "low",     "domain_reputation": {       "risk_level": "low",       "risk_score": 0,       "reasons": [],       "is_free_provider": false,       "domain": "company.com"     }   },   "metadata": {     "body_text_length": 117,     "body_word_count": 19,     "body_avg_word_length": 5.2105263157894735,     "body_uppercase_ratio": 0.02564102564102564,     "body_digit_ratio": 0.008547008547008548,     "body_special_char_ratio": 0.03418803418803419,     "body_exclamation_count": 0,     "body_question_count": 0,     "body_consecutive_caps": 0,     "subject_text_length": 16,     "subject_word_count": 3,     "subject_avg_word_length": 4.666666666666667,     "subject_uppercase_ratio": 0.1875,     "subject_digit_ratio": 0.0625,     "subject_exclamation_count": 0,     "url_count": 0,     "has_url": 0,     "suspicious_tld": 0,     "ip_in_url": 0,     "shortened_url": 0,     "https_ratio": 0,     "url_length_avg": 0,     "url_has_hex_encoding": 0,     "url_long_query": 0,     "html_tag_count": 0,     "html_ratio": 0,     "img_count": 0,     "script_count": 0,     "style_count": 0,     "base64_count": 0,     "spam_keyword_count": 0,     "spam_money_symbol": 0,     "spam_pct_off": 0,     "spam_uppercase_words": 0,     "spam_exclamation_count": 0,     "spam_has_unsubscribe": 0,     "spam_has_dear_friend": 0,     "spam_has_click_here": 0,     "sender_domain_match": 0,     "reply_to_mismatch": 0,     "has_display_name": 0,     "header_length": 87,     "free_email_provider": 0,     "suspicious_sender": 0,     "subject_has_buy_now": 0   },   "reputation": {     "sender_email_count": 0,     "sender_ham_count": 0,     "sender_spam_count": 0,     "sender_phish_count": 0,     "sender_spam_ratio": 0,     "sender_is_known": 0   },   "reasons": [],   "explanation": null }
+
+
+{
+  "from": "security@bank-verify.ru",
+  "subject": "⚠️ Account Suspended - Verify Now",
+  "body": "Your account has been suspended. Click here to verify: http://192.168.1.1/bank"
+}
+
+
+{
+  "message_id": "string",
+  "from_email": "security@bank-verify.ru",
+  "to": [
+    "string"
+  ],
+  "subject": "⚠️ Account Suspended - Verify Now",
+  "predicted": {
+    "ham_score": 0.663409948348999,
+    "spam_score": 0.04986248537898064,
+    "phishing_score": 0.2867276072502136,
+    "predicted_label": "phishing",
+    "model_used": "xgboost_v3_enhanced",
+    "model_confidence": 0.95
+  },
+  "risk_analysis": {
+    "risk_score": 95,
+    "severity": "critical",
+    "domain_reputation": {
+      "risk_level": "high",
+      "risk_score": 3,
+      "reasons": [
+        "high_risk_tld"
+      ],
+      "is_free_provider": false,
+      "domain": "bank-verify.ru"
+    }
+  },
+  "metadata": {
+    "body_text_length": 78,
+    "body_word_count": 10,
+    "body_avg_word_length": 6.9,
+    "body_uppercase_ratio": 0.02564102564102564,
+    "body_digit_ratio": 0.10256410256410256,
+    "body_special_char_ratio": 0.11538461538461539,
+    "body_exclamation_count": 0,
+    "body_question_count": 0,
+    "body_consecutive_caps": 0,
+    "subject_text_length": 33,
+    "subject_word_count": 6,
+    "subject_avg_word_length": 4.666666666666667,
+    "subject_uppercase_ratio": 0.12121212121212122,
+    "subject_digit_ratio": 0,
+    "subject_exclamation_count": 0,
+    "url_count": 1,
+    "has_url": 1,
+    "suspicious_tld": 0,
+    "ip_in_url": 1,
+    "shortened_url": 0,
+    "https_ratio": 0,
+    "url_length_avg": 23,
+    "url_has_hex_encoding": 0,
+    "url_long_query": 0,
+    "html_tag_count": 0,
+    "html_ratio": 0,
+    "img_count": 0,
+    "script_count": 0,
+    "style_count": 0,
+    "base64_count": 0,
+    "spam_keyword_count": 5,
+    "spam_money_symbol": 0,
+    "spam_pct_off": 0,
+    "spam_uppercase_words": 0,
+    "spam_exclamation_count": 0,
+    "spam_has_unsubscribe": 0,
+    "spam_has_dear_friend": 0,
+    "spam_has_click_here": 1,
+    "sender_domain_match": 0,
+    "reply_to_mismatch": 0,
+    "has_display_name": 0,
+    "header_length": 87,
+    "free_email_provider": 0,
+    "suspicious_sender": 1,
+    "subject_has_buy_now": 0
+  },
+  "reputation": {
+    "sender_email_count": 0,
+    "sender_ham_count": 0,
+    "sender_spam_count": 0,
+    "sender_phish_count": 0,
+    "sender_spam_ratio": 0,
+    "sender_is_known": 0
+  },
+  "reasons": [
+    {
+      "type": "high_spam_keywords",
+      "weight": "high",
+      "value": 5,
+      "description": "5 spam keywords detected"
+    },
+    {
+      "type": "suspicious_domain",
+      "weight": "high",
+      "value": "bank-verify.ru",
+      "description": "Suspicious domain patterns detected"
+    },
+    {
+      "type": "suspicious_sender",
+      "weight": "high",
+      "value": null,
+      "description": "Suspicious sender address pattern"
+    },
+    {
+      "type": "unknown_sender",
+      "weight": "medium",
+      "value": null,
+      "description": "First-time sender with suspicious content"
+    },
+    {
+      "type": "ip_based_url",
+      "weight": "high",
+      "value": null,
+      "description": "URL uses IP address instead of domain"
+    }
+  ],
+  "explanation": "🚨 CRITICAL THREAT DETECTED (Risk Score: 95/100) - 5 spam keywords detected, Suspicious domain patterns detected, Suspicious sender address pattern"
+}

@@ -1,0 +1,16 @@
+uvicorn main:app --reload --port 8000
+
+
+
+
+👉 http://127.0.0.1:8000/docs
+
+✔ This is the full Swagger UI
+✔ You can test all endpoints here
+✔ Auto-generated UI
+
+Or:
+
+👉 http://127.0.0.1:8000/redoc
+
+For Redoc documentation.
