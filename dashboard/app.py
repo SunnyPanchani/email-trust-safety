@@ -251,15 +251,23 @@ with tab5:
         if submit:
             with st.spinner("Classifying email..."):
                 try:
+                    # payload = {
+                    #     "message_id": "test-" + datetime.now().strftime("%Y%m%d%H%M%S"),
+                    #     "from": from_email,
+                    #     "to": [to_email],
+                    #     "subject": subject,
+                    #     "body": body,
+                    #     "headers": {}
+                    # }
                     payload = {
                         "message_id": "test-" + datetime.now().strftime("%Y%m%d%H%M%S"),
-                        "from": from_email,
-                        "to": [to_email],
-                        "subject": subject,
-                        "body": body,
+                        "from": from_email.strip(),  # ✅ Use "from" not "from_email"
+                        "to": [to_email.strip()],
+                        "subject": subject.strip(),
+                        "body": body.strip(),
                         "headers": {}
-                    }
-                    
+                                                    }
+
                     response = requests.post(
                         f"{API_URL}/score_email",
                         json=payload,
